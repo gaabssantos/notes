@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+}
+
+body {
+  background-color: #202024;
+}
+
+/* ---------------------------------------------------- */
+
+#header {
+  border-bottom: 1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  color: #fff;
+}
+
+#header h1 {
+  margin-left: 90px;
+}
+
+#header button {
+  margin-right: 90px;
+  color: #fff;
+  background-color: #2f3033;
+  border: 2px solid #fff;
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#header button:hover {
+  background-color: #fff;
+  color: #2f3033;
+  outline: 1px solid #2f3033;
+}
+
+#search-notes {
+  width: 45%;
+}
+
+#search-notes input {
+  width: 65%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4c4e50;
+}
+
+#search-notes i {
+  margin-right: 10px;
+}
+
+/* ---------------------------------------------------- */
+
+#write-notes {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#write-notes button {
+  padding: 0 10px;
+  margin-left: 10px;
+  background-color: #323336;
+  border: 2px solid #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#note {
+  padding: 10px;
+  width: 25%;
+  border-radius: 5px;
+  background-color: #202024;
+  border: 1px solid #616161;
+  color: #fff;
+}
+
+/* ---------------------------------------------------- */
+
+#notes-container {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 30px;
+  width: 93vw;
+  flex-wrap: wrap;
+}
+
+.notes {
+  border: 1px solid #ccc;
+  width: 20%;
+  height: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 0 20px 20px;
+}
+
+.notes p {
+  color: #fff;
+  font-weight: bold;
+}
+
+.fixed {
+  height: 95%;
+  display: flex;
+  align-items: end;
+}
+
+.fixed button {
+  color: #fff;
+  background-color: #323336;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fixed i {
+  padding: 10px;
+}
+
+.options {
+  float: right;
+  margin-top: -20px;
+  transition: 0.5s;
+}
+
+.options span {
+  display: block;
+  margin-bottom: 10px;
+  color: #47464a;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.fixed-notes {
+  background-color: #3d3c40;
+}
+
+/* ---------------------------------------------------- */
+
+.hide {
+  display: none;
+}
+
+/* ---------------------------------------------------- */
+
+@media (max-width: 575px) {
+  #header h1,
+  #header button {
+    margin: 0;
+  }
+
+  #header i {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  #header h1,
+  #header button {
+    margin: 0;
+  }
+
+  #header i {
+    margin-left: 10px;
+  }
+}

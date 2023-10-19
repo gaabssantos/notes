@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div id="header">
+        <h1>DevNotes</h1>
+        <div id="search-notes">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Busque por uma nota..." />
+        </div>
+        <button id="btn-export">
+          Exportar CSV <i class="fa fa-download" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div id="main-content">
+        <div id="write-notes">
+          <input id="note" type="text" placeholder="O que deseja anotar?" />
+          <button id="btn-add"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <div id="notes-container"></div>
+      </div>
+    </div>
+  </body>
+</html>
