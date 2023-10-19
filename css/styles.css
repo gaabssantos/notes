@@ -48,6 +48,7 @@ body {
   border-radius: 5px;
   border: none;
   background-color: #4c4e50;
+  color: #fff;
 }
 
 #search-notes i {
@@ -105,9 +106,9 @@ body {
 }
 
 .fixed {
-  height: 95%;
-  display: flex;
-  align-items: end;
+  position: relative;
+  top: 75%;
+  width: 0;
 }
 
 .fixed button {
@@ -126,9 +127,12 @@ body {
   float: right;
   margin-top: -20px;
   transition: 0.5s;
+  opacity: 0;
 }
 
 .options span {
+  position: relative;
+  left: 100%;
   display: block;
   margin-bottom: 10px;
   color: #47464a;
